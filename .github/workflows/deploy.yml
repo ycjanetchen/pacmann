@@ -2,7 +2,7 @@ name: Deploy Pac-Man to GitHub Pages
 
 on:
   push:
-    branches: [main, master]
+    branches: [main, master, claude/pacman-game-react-pITHj]
   workflow_dispatch:
 
 permissions:

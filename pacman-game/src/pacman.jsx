@@ -357,37 +357,37 @@ export default function PacManGame() {
               <>
                 <div style={{ fontSize: 18, color: "#FFE000" }}>PAC-MAN</div>
                 <div style={{ fontSize: 9, color: "#fff", textAlign: "center", lineHeight: 2 }}>
-                  使用方向鍵移動<br />吃掉所有豆子<br />避開鬼魂！
+                  Use arrow keys to move<br />Eat all the dots<br />Avoid the ghosts!
                 </div>
-                <div style={{ fontSize: 8, color: "#aaa" }}>按方向鍵開始</div>
+                <div style={{ fontSize: 8, color: "#aaa" }}>Press an arrow key to start</div>
               </>
             )}
             {gameState === "dead" && (
               <>
-                <div style={{ fontSize: 14, color: "#f55" }}>被抓到了！</div>
-                <div style={{ fontSize: 8, color: "#aaa" }}>按方向鍵繼續</div>
+                <div style={{ fontSize: 14, color: "#f55" }}>CAUGHT!</div>
+                <div style={{ fontSize: 8, color: "#aaa" }}>Press an arrow key to continue</div>
               </>
             )}
             {gameState === "gameover" && (
               <>
                 <div style={{ fontSize: 14, color: "#f55" }}>GAME OVER</div>
-                <div style={{ fontSize: 10, color: "#fff" }}>分數: {gs.score}</div>
+                <div style={{ fontSize: 10, color: "#fff" }}>SCORE: {gs.score}</div>
                 <button onClick={startGame} style={{
                   background: "#FFE000", color: "#000", border: "none",
                   padding: "8px 20px", fontFamily: "inherit", fontSize: 9,
                   cursor: "pointer",
-                }}>再來一次</button>
+                }}>PLAY AGAIN</button>
               </>
             )}
             {gameState === "won" && (
               <>
                 <div style={{ fontSize: 12, color: "#0f0" }}>YOU WIN!</div>
-                <div style={{ fontSize: 10, color: "#fff" }}>分數: {gs.score}</div>
+                <div style={{ fontSize: 10, color: "#fff" }}>SCORE: {gs.score}</div>
                 <button onClick={startGame} style={{
                   background: "#FFE000", color: "#000", border: "none",
                   padding: "8px 20px", fontFamily: "inherit", fontSize: 9,
                   cursor: "pointer",
-                }}>再玩一次</button>
+                }}>PLAY AGAIN</button>
               </>
             )}
           </div>
@@ -395,7 +395,7 @@ export default function PacManGame() {
       </div>
 
       <div style={{ marginTop: 14, fontSize: 8, color: "#444", textAlign: "center", lineHeight: 2 }}>
-        ⬆⬇⬅➡ 方向鍵控制 · 粉色大點 = 能量豆 · 能量豆讓鬼魂變藍可以吃掉
+        ⬆⬇⬅➡ Arrow keys to move · Pink dots = Power Pellets · Power Pellets turn ghosts blue — eat them!
       </div>
     </div>
   );

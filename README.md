@@ -13,24 +13,10 @@ The following prompts were sent to Claude Code to build and deploy this project:
 > **Prompt 1:**
 > `npx create-react-app pacman-game` / `cd pacman-game`
 > *(Provided the full `pacman.jsx` source code to scaffold and fix)*
+> "Made a jsx file from Claude chat
 
 > **Prompt 2:**
 > "Please build the React app and deploy it to GitHub Pages so it can be played at the URL"
-
-> **Prompt 3:**
-> "There is no gh-pages branch to choose"
-> *(Screenshot of GitHub Pages settings showing only `main` and `claude/` branches)*
-
-> **Prompt 4:**
-> "what happened? I still cannot play the game"
-> *(Screenshot showing the site served the README instead of the game)*
-
-> **Prompt 5:**
-> "please change the word to english, all the words in this game web should be english"
-> *(Screenshot showing Chinese text in the game UI)*
-
-> **Prompt 6:**
-> "Please create a README.md, including my prompt and the process for Javascript to html"
 
 ---
 
